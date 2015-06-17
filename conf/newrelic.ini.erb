@@ -2,7 +2,7 @@ extension = "<%= ENV['OPENSHIFT_NEWRELIC_DIR'] %>lib/agent/newrelic.so"
 [newrelic]
 newrelic.license = "<%= ENV['OPENSHIFT_NEWRELIC_LICENSE_KEY'] %>"
 newrelic.logfile = "<%= ENV['OPENSHIFT_LOG_DIR'] %>/php_agent.log"
-newrelic.appname = "<%= ENV['OPENSHIFT_APP_NAME'] %>"
+newrelic.appname = "<%= ENV['OPENSHIFT_APP_NAME'] %>-<%= ENV['OPENSHIFT_NAMESPACE'] %>"
 newrelic.daemon.logfile = "<%= ENV['OPENSHIFT_LOG_DIR'] %>/newrelic-daemon.log"
 newrelic.daemon.pidfile = "<%= ENV['OPENSHIFT_NEWRELIC_DIR'] %>/var/run/newrelic.pid"
 newrelic.daemon.location = "<%= ENV['OPENSHIFT_NEWRELIC_DIR'] %>/lib/daemon/newrelic-daemon"
