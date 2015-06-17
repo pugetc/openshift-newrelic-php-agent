@@ -19,7 +19,7 @@ Cart-Data:
     Type: environment
     Description: "New Relic license key."
 Website: http://newrelic.com/
-Source-Url: https://github.com/spinolacastro/openshift-newrelic-php-agent.git
+Source-Url: https://github.com/getupcloud/openshift-newrelic-php-agent.git
 Help-Topics:
   Developer Center: https://docs.newrelic.com/docs/agents/php-agent
 Provides:
