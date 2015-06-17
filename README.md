@@ -2,7 +2,7 @@
 
 The `newrelic-agent` cartridge provides [NewRelic](http://www.newrelic.com/) agent for PHP applications, to install create your app and run:
 
-	rhc add-cartridge http://reflector-getupcloud.getup.io/reflect?github=getupcloud/openshift-newrelic-php-agent --app [APP]
+	rhc add-cartridge http://reflector-getupcloud.getup.io/github/getupcloud/openshift-newrelic-php-agent --app [APP]
 
 ## Configuration 
 
