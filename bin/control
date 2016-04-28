@@ -15,7 +15,6 @@ function isrunning() {
 
 function start {
 	oo-erb $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini.erb > $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini
-	export PHP_INI_SCAN_DIR=$PHP_INI_SCAN_DIR:$OPENSHIFT_NEWRELIC_DIR/conf
 	gear reload -c php 2>/dev/null
 }
 
