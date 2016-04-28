@@ -14,7 +14,7 @@ function isrunning() {
 }
 
 function start {
-	oo-erb $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini.erb > $PHP_INI_SCAN_DIR/newrelic.ini
+	oo-erb $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini.erb > $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini
 	gear reload -c php 2>/dev/null
 }
 
@@ -23,7 +23,7 @@ function stop {
 	if isrunning; then
 		kill "$pid" 2>/dev/null
 		rm -f $NEWRELIC_DAEMON_PID=$OPENSHIFT_NEWRELIC_DIR/var/run/newrelic.pid
-		> $PHP_INI_SCAN_DIR/newrelic.ini
+		> $OPENSHIFT_NEWRELIC_DIR/conf/newrelic.ini
 	fi
 }
 
